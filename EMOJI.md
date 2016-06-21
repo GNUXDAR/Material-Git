@@ -1,5 +1,7 @@
 #Emoji de github
 
+**Estos son algunos de los Emoticones o Emoji que se utilizan en github**
+
 #People
 
 :bowtie:
