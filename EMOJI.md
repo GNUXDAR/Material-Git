@@ -577,7 +577,7 @@
 :tomato:
 :corn:
 
-Places
+#Places
 
 :house:
 :house_with_garden:
