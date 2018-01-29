@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ## Para firmar los commits como distintos usuarios
-=======
-##Para firmar los commits como distintos usuarios
->>>>>>> e82f765be18b95087f9821ce99890af3f4b9e264
 
 Cuando uno empieza a trabajar con git, en algún momento fija su configuración global de nombre y correo
 ```
@@ -20,11 +16,7 @@ git config user.email sm@email.com
 Esa configuración pisa la configuración global para ese repositorio en particular.
 Todo lo que he indicado hasta ahora guarda relación con el email al cual se atribuye la autoría del commit, que no tiene ninguna relación con la cuenta de github que se utilice para interactuar con el remoto via pull/push.
 
-<<<<<<< HEAD
 ### Para identificarse como distintos usuarios al interactuar con el remoto
-=======
-###Para identificarse como distintos usuarios al interactuar con el remoto
->>>>>>> e82f765be18b95087f9821ce99890af3f4b9e264
 
 Para esto último, si el remoto de un repositorio está apuntando a la url https, por ejemplo
 
@@ -67,8 +59,8 @@ Host subdominio.github.com
 
 Y con eso las interacciones con los repos cuyo remoto empiece con subdominio.github.com usarían la segunda llave.
 
-Estracto sacado de <a href="https://es.stackoverflow.com/questions/59293/c%C3%B3mo-tener-dos-cuentas-de-git-en-un-mismo-equipo">[stackoverflow]</a>
+Estracto sacado de <a href="https://es.stackoverflow.com/questions/59293/cómo-tener-dos-cuentas-de-git-en-un-mismo-equipo">[stackoverflow]</a>
 
 :alien: Probado y funciona  :+1:
 
-Comentame como te fue [Twitter](https://twitter.com/Gnuxdar/)
+Comentame como te fue [Twitter.](https://twitter.com/Gnuxdar)
