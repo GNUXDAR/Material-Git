@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## Para firmar los commits como distintos usuarios
+=======
+##Para firmar los commits como distintos usuarios
+>>>>>>> e82f765be18b95087f9821ce99890af3f4b9e264
 
 Cuando uno empieza a trabajar con git, en algún momento fija su configuración global de nombre y correo
 ```
@@ -16,7 +20,11 @@ git config user.email sm@email.com
 Esa configuración pisa la configuración global para ese repositorio en particular.
 Todo lo que he indicado hasta ahora guarda relación con el email al cual se atribuye la autoría del commit, que no tiene ninguna relación con la cuenta de github que se utilice para interactuar con el remoto via pull/push.
 
+<<<<<<< HEAD
 ### Para identificarse como distintos usuarios al interactuar con el remoto
+=======
+###Para identificarse como distintos usuarios al interactuar con el remoto
+>>>>>>> e82f765be18b95087f9821ce99890af3f4b9e264
 
 Para esto último, si el remoto de un repositorio está apuntando a la url https, por ejemplo
 
