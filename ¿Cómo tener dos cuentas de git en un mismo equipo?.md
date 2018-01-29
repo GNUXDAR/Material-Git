@@ -55,7 +55,7 @@ Host subdominio.github.com
     HostName github.com
     User git
     IdentityFile ~/.ssh/santiago2
-    ```
+```
 
 Y con eso las interacciones con los repos cuyo remoto empiece con subdominio.github.com usarían la segunda llave.
 
