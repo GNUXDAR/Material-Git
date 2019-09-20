@@ -9,8 +9,11 @@ Una especie de rincon para guardar cositas de git y github que se me puedan olvi
 
 ##### Comandos
 git init
+
 git add README.md
+
 git commit -m "Mi primer Commit"
+
 git add -A
 
 
