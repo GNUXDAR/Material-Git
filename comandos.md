@@ -1,53 +1,45 @@
 ##### Comandos
-git init
+1. git init
 
-git add README.md
+2. git add README.md
 
-git commit -m "Mi primer Commit"
+3. git commit -m "Mi primer Commit"
 
-git add -A
+4. git add -A
 
-git diff    (mestra todas la lineas alteradas)
+5. git diff    (mestra todas la lineas alteradas)
 
-git diff admin/funciones.php    (especifica las lineas que fueron alteradas en el fichero)
+6. git diff admin/funciones.php    (especifica las lineas que fueron alteradas en el fichero)
 
-git remote add origin master httpt://github.com/gnuxdar/example.git
+7. git remote add origin master httpt://github.com/gnuxdar/example.git
 
-git push -u origin master
+8. git push -u origin master
 
-git commit --amend -m "New commit message"  Reescribe el utimo commit
+9. git commit --amend -m "New commit message"  Reescribe el utimo commit
 
-git merge developer  (fusiona la rama que le indiquemos a la rama actual)
+10. git merge developer  (fusiona la rama que le indiquemos a la rama actual)
 
-git log --decorate --all --graph --oneline  (muestra de manera mas grafica en la terminal)
+11. git log --decorate --all --graph --oneline  (muestra de manera mas grafica en la terminal)
 
-cat my_proyecto/.git/config   (leer el fichero git para ver repositosio remoto o info)
+12. cat my_proyecto/.git/config   (leer el fichero git para ver repositosio remoto o info)
 
-git remote -v   (muestra a que repositorio esta ligado)
+13. git remote -v   (muestra a que repositorio esta ligado)
 
-git log         (muestra los commit que se han hecho)
+14. git log         (muestra los commit que se han hecho)
 
-git log -p      (muestra el codigo del commit)
+15. git log -p      (muestra el codigo del commit)
 
-git reset --hard HEAD~1  (elimina el ultimo commit)
+16. git reset --hard HEAD~1  (elimina el ultimo commit) 
 
- Con git moderno, puedes, como se sugirió en la respuesta anterior:
+17. git reset --merge 
 
- git merge --abort 
+18. git reset --hard 
 
-Sintaxis antigua:
+19. git config --get remote.origin.url 	(muestra la url de nuestro repositorio)
 
- git reset --merge 
+20. git config --local -l 				(muestra la configuracion local)
 
-Old-school, también sugerido en la respuesta anterior:
-
- git reset --hard 
-
-git config --get remote.origin.url 	(muestra la url de nuestro repositorio)
-
-git config --local -l 				(muestra la configuracion local)
-
-git config --global -l 				(muestra la configuracion global)
+21. git config --global -l 				(muestra la configuracion global)
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
@@ -58,15 +50,15 @@ También puedes crear un archivo .gitignore global, que consiste en una lista de
 ### Ramas
  Cuando clonas un repositorio, toda la información de las sucursales se descarga, pero las sucursales están ocultas. Con el comando
 
-** $ git branch -a **
+	** $ git branch -a **
 
 puede mostrar todas las ramas del repositorio, y con el comando 
 
-** $ git checkout -b branchname origin/branchname **
+	** $ git checkout -b branchname origin/branchname **
 
  A continuación, puede "descargar" manualmente uno a la vez. 
 
-** $ git checkout -b gnuxdar_agosto remotes/origin/gnuxdar_agosto **
+	** $ git checkout -b gnuxdar_agosto remotes/origin/gnuxdar_agosto **
 
 
 From https://bitbucket.org/kodimrepo1/misahualli
