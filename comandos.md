@@ -1,4 +1,10 @@
 ##### Comandos
+git config --global user.email "gnuxdar@gmail.com"
+git config --global user.name "Arturo"
+git config --global -e  (editor)
+git config --global -l  (muestra lol guardado)
+git config --list
+
 1. git init
 
 2. git add README.md
@@ -29,34 +35,44 @@
 
 15. git log -p      (muestra el codigo del commit)
 
-16. git reset --hard HEAD~1  (elimina el ultimo commit) 
+16. git reset --hard HEAD~1  (elimina el ultimo commit)
 
-17. git reset --merge 
+17. git reset --merge
 
-18. git reset --hard 
+18. git reset --hard
 
-19. git config --get remote.origin.url 	(muestra la url de nuestro repositorio)
+20. git reset --mixed <hash de commit a regresar>
 
-20. git config --local -l 				(muestra la configuracion local)
+21. git config --get remote.origin.url 	(muestra la url de nuestro repositorio)
 
-21. git config --global -l 				(muestra la configuracion global)
+22. git config --local -l 				(muestra la configuracion local)
+
+23. git config --global -l 				(muestra la configuracion global)
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
 
-En Global $ git config --global core.excludesfile ~/.gitignore_global 
+En Global $ git config --global core.excludesfile ~/.gitignore_global
 También puedes crear un archivo .gitignore global, que consiste en una lista de normas para ignorar archivos en cada repositorio de Git de tu computadora. Por ejemplo, puedes crear el archivo en ~/.gitignore_global y agregarle algunas normas.
+
+### Cambio de usuario en un repo
+git config user.name "greboidw"
+git config user.email gregorio@idw.com.pe
+
+
+### Cambiar la url remota
+git remote set-url origin https://gnuxdar@bitbucket.org/gnuxdar/cms_restaurant.git
 
 ### Ramas
  Cuando clonas un repositorio, toda la información de las sucursales se descarga, pero las sucursales están ocultas. Con el comando
 
 	** $ git branch -a **
 
-puede mostrar todas las ramas del repositorio, y con el comando 
+puede mostrar todas las ramas del repositorio, y con el comando
 
 	** $ git checkout -b branchname origin/branchname **
 
- A continuación, puede "descargar" manualmente uno a la vez. 
+ A continuación, puede "descargar" manualmente uno a la vez.
 
 	** $ git checkout -b gnuxdar_agosto remotes/origin/gnuxdar_agosto **
 
@@ -68,9 +84,11 @@ fatal: refusing to merge unrelated histories
 
 git pull --allow-unrelated-histories origin master  (cuando da el error de arriba, esto lo corrige, forza el pull)
 
-Agregar de un repositorio remoto diferente a mi repo local
+## Agregar de un repositorio remoto diferente a mi repo local
 git remote add gilberto https://github.com/gilberto9312/eqsoft.git
 git pull gilberto gnuxdar_github
+
+git push -u gnuxdar_github rame
 
 ### Varios Repositorios en un mismo repo OJO git remote add [alias del repo que le pondremos "fork"] https://github.com/gilberto9312/eqsoft.git git checkout -b gnuxdar_github (para crear una rama desde la que ya existe "en caso de existir una") git checkout -t remotes/github/git_gnux_gil (descargar un arama del repo remoto)
 
