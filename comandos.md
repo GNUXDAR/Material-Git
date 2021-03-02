@@ -49,6 +49,8 @@ git config --list
 
 23. git config --global -l 				(muestra la configuracion global)
 
+24. git branch -m master main 			(mover la rama mastar a main)
+
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
 
@@ -90,7 +92,10 @@ git pull gilberto gnuxdar_github
 
 git push -u gnuxdar_github rame
 
-### Varios Repositorios en un mismo repo OJO git remote add [alias del repo que le pondremos "fork"] https://github.com/gilberto9312/eqsoft.git git checkout -b gnuxdar_github (para crear una rama desde la que ya existe "en caso de existir una") git checkout -t remotes/github/git_gnux_gil (descargar un arama del repo remoto)
+### Varios Repositorios en un mismo repo 
+OJO git remote add [alias del repo que le pondremos "fork"] https://github.com/gilberto9312/eqsoft.git 
+git checkout -b gnuxdar_github (para crear una rama desde la que ya existe "en caso de existir una") 
+git checkout -t remotes/github/git_gnux_gil (descargar un arama del repo remoto)
 
 los demas procesos iguales que anterior git add route/file.php git commit -m "messaje" git push fork (mi fork)
 
