@@ -55,6 +55,8 @@ git config --list
 
 26. git checkout tag\_name              (Acceder al codigo asociado a ese tag)
 
+27. git push origin 1.0.0               (hacer push al tag)
+
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
