@@ -57,6 +57,8 @@ git config --list
 
 27. git push origin 1.0.0               (hacer push al tag)
 
+28. git config core.fileMode false		(Evita marcar todos los archivos como modificados al cambiar permisos.)
+
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
@@ -86,12 +88,16 @@ puede mostrar todas las ramas del repositorio, y con el comando
 	** $ git checkout -b gnuxdar_agosto remotes/origin/gnuxdar_agosto **
 
 
-From https://bitbucket.org/kodimrepo1/misahualli
+git merge rama
 
  * branch            master     -> FETCH_HEAD
 fatal: refusing to merge unrelated histories
+fatal: rehusando fusionar historias no relacionadas
 
+(solucion)
 git pull --allow-unrelated-histories origin master  (cuando da el error de arriba, esto lo corrige, forza el pull)
+ó
+git merge development --allow-unrelated-histories
 
 ## Agregar de un repositorio remoto diferente a mi repo local
 git remote add gilberto https://github.com/gilberto9312/eqsoft.git
