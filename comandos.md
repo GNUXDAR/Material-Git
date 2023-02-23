@@ -35,6 +35,9 @@ git config --list
 
 15. git log -p      (muestra el codigo del commit)
 
+16.	git revert <ID>		(Revertir algunas confirmaciones existentes)
+
+git reset --soft HEAD~1  (elimina el ultimo commit, HEAD~e elimina los ulimos 3)
 16. git reset --hard HEAD~1  (elimina el ultimo commit)
 
 17. git reset --merge
@@ -58,6 +61,10 @@ git config --list
 27. git push origin 1.0.0               (hacer push al tag)
 
 28. git config core.fileMode false		(Evita marcar todos los archivos como modificados al cambiar permisos.)
+    
+29. git checkout -b nombreDeLaNuevaBranch	(crear un rama a partir de la rama actual)
+    
+30. git push --set-upstream origin nombreDeLaNuevaBranch		(subir al repo la rama nueva creada)
 
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
