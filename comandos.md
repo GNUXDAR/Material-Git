@@ -17,9 +17,9 @@ git config --list
 
 6. git diff admin/funciones.php    (especifica las lineas que fueron alteradas en el fichero)
 
-7. git remote add origin master httpt://github.com/gnuxdar/example.git
+7. git remote add origin main httpt://github.com/gnuxdar/example.git
 
-8. git push -u origin master
+8. git push -u origin main
 
 9. git commit --amend -m "New commit message"  Reescribe el utimo commit
 
@@ -65,7 +65,17 @@ git reset --soft HEAD~1  (elimina el ultimo commit, HEAD~e elimina los ulimos 3)
 29. git checkout -b nombreDeLaNuevaBranch	(crear un rama a partir de la rama actual)
     
 30. git push --set-upstream origin nombreDeLaNuevaBranch		(subir al repo la rama nueva creada)
+    
+31. git commit -m "[UPD] this comment 				(Co Author del commit)
+Co-authored-by: Arturo <gnuxdar@gmail.com>
+Co-authored-by: Gregorio <grebodeveloper@gmail.com>"
 
+### error: falló el empuje de algunas referencias a 'github.com:GNUXDAR/gnuxdar.git'
+	git config --global user.email
+	{ID}+{username}@users.noreply.github.com   -	git config user.email "6179849+GNUXDAR@users.noreply.github.com"
+	git config --global user.email {ID}+{username}@users.noreply.github.com
+	git commit --amend --reset-author
+	git push
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
