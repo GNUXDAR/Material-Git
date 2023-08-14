@@ -16,24 +16,26 @@ git config --list
 5. git diff    (mestra todas la lineas alteradas)
 
 6. git diff admin/funciones.php    (especifica las lineas que fueron alteradas en el fichero)
+   
+7. git branch -M main
 
-7. git remote add origin main httpt://github.com/gnuxdar/example.git
+8. git remote add origin main httpt://github.com/gnuxdar/example.git
 
-8. git push -u origin main
+9.  git push -u origin main
 
-9. git commit --amend -m "New commit message"  Reescribe el utimo commit
+10. git commit --amend -m "New commit message"  Reescribe el utimo commit
 
-10. git merge developer  (fusiona la rama que le indiquemos a la rama actual)
+11. git merge developer  (fusiona la rama que le indiquemos a la rama actual)
 
-11. git log --decorate --all --graph --oneline  (muestra de manera mas grafica en la terminal)
+12. git log --decorate --all --graph --oneline  (muestra de manera mas grafica en la terminal)
 
-12. cat my_proyecto/.git/config   (leer el fichero git para ver repositosio remoto o info)
+13. cat my_proyecto/.git/config   (leer el fichero git para ver repositosio remoto o info)
 
-13. git remote -v   (muestra a que repositorio esta ligado)
+14. git remote -v   (muestra a que repositorio esta ligado)
 
-14. git log         (muestra los commit que se han hecho)
+15. git log         (muestra los commit que se han hecho)
 
-15. git log -p      (muestra el codigo del commit)
+16. git log -p      (muestra el codigo del commit)
 
 16.	git revert <ID>		(Revertir algunas confirmaciones existentes)
 
