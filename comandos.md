@@ -3,7 +3,8 @@ git config --global user.email "gnuxdar@gmail.com"
 git config --global user.name "Arturo"
 git config --global -e  (editor)
 git config --global -l  (muestra lol guardado)
-git config --list
+git config -l ó git config --list
+
 
 1. git init
 
@@ -11,7 +12,7 @@ git config --list
 
 3. git commit -m "Mi primer Commit"
 
-4. git add -A
+4. git add -A ó git add .
 
 5. git diff    (mestra todas la lineas alteradas)
 
@@ -36,6 +37,10 @@ git config --list
 15. git log         (muestra los commit que se han hecho)
 
 16. git log -p      (muestra el codigo del commit)
+
+17. git log --author="Arturo Cabrera"
+
+18. git log --author="TuNombre" --oneline --decorate --graph
 
 16.	git revert <ID>		(Revertir algunas confirmaciones existentes)
 
@@ -72,6 +77,11 @@ git reset --soft HEAD~1  (elimina el ultimo commit, HEAD~e elimina los ulimos 3)
 Co-authored-by: Arturo <gnuxdar@gmail.com>
 Co-authored-by: Gregorio <grebodeveloper@gmail.com>"
 
+## generar SSH
+
+## Generar una nueva ssh (una existente)
+	ssh-keygen -t ed25519 -C "your_email@example.com"
+
 ### error: falló el empuje de algunas referencias a 'github.com:GNUXDAR/gnuxdar.git'
 	git config --global user.email
 	{ID}+{username}@users.noreply.github.com   -	git config user.email "6179849+GNUXDAR@users.noreply.github.com"
@@ -81,6 +91,8 @@ Co-authored-by: Gregorio <grebodeveloper@gmail.com>"
 
 ### Gitignore Si ya tienes un archivo registrado y quieres ignorarlo
 Git no ignorará el archivo si agregas una norma más tarde. En esos casos, primero debes dejar de seguir el archivo, ejecutando el siguiente comando en tu terminal: En local $git rm --cached FILENAME
+
+Si quieres ignorar un archivo que has confirmado en el pasado, deberás eliminarlo de tu repositorio y, a continuación, añadirle una regla de .gitignore. Al usar la opción --cached con git rm, el archivo se eliminará del repositorio, pero permanecerá en tu directorio de trabajo como archivo ignorado.
 
 En Global $ git config --global core.excludesfile ~/.gitignore_global
 También puedes crear un archivo .gitignore global, que consiste en una lista de normas para ignorar archivos en cada repositorio de Git de tu computadora. Por ejemplo, puedes crear el archivo en ~/.gitignore_global y agregarle algunas normas.
