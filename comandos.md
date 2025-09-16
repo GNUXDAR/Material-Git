@@ -7,106 +7,62 @@ git config -l ó git config --list
 
 
 1. git init
-
 2. git add README.md
-
 3. git commit -m "Mi primer Commit"
-
 4. git add -A ó git add .
-
 5. git diff    (mestra todas la lineas alteradas)
-
-6. git diff admin/funciones.php    (especifica las lineas que fueron alteradas en el fichero)
-	 
+6. git diff admin/funciones.php    (especifica las lineas que fueron alteradas en el fichero) 
 7. git branch -M main
-
 8. git branch -m <nuevo-nombre>      (cambiar el nombre de la rama, desde otra rama)
-
 9. git remote add origin main httpt://github.com/gnuxdar/example.git
-
 10.  git push -u origin main
-
 11. git commit --amend -m "New commit message"  Reescribe el utimo commit
-
 12. git merge developer  (fusiona la rama que le indiquemos a la rama actual)
-
 13. git log --oneline --decorate --all --graph	(se ve la proicedencia de una rama)
-
 14. git log --decorate --all --graph --oneline  (muestra de manera mas grafica en la terminal)
-
 15. cat my_proyecto/.git/config   (leer el fichero git para ver repositosio remoto o info)
-
 16. git remote -v   (muestra a que repositorio esta ligado)
-
 17. git ls-remote origin	(lista todas las ramas remotas)
-
 ## log
 18. git log         (muestra los commit que se han hecho)
-
 19. git log -p      (muestra el codigo del commit)
-
 20. git log -p <nombre-del-archivo>     (si solo quieres ver los cambios en un archivo específico en cada commit, puedes usar el siguiente comando)
-
 21. git log <fichero>
-
 22. git log --author="Arturo Cabrera"       (con username)
-
 23. git log --author="gnuxdar@gmail.com"    (con email)
-
 24. git log --author="TuNombre" --oneline --decorate --graph
-
 25. git log --author="Arturo Cabrera" --since="2024-04-01" --until="2024-04-30" --format="%h - %s - %ad"
-
 26. git log --merges      (ver el historial de fusiones (merges))
-
 27. git blame <nombre-del-archivo>    (ver los cambios en un fichero especifico en cada commit)
-
+28. git blame <nombre-fichero> > <nombre-fichero-salida>  (para guardar la salida de git blame en un archivo)
 28.	git revert <ID>		(Revertir algunas confirmaciones existentes)
-
 29. git reset --soft HEAD~1  (elimina el ultimo commit)
-    
 30. git reset --hard HEAD~3 (elimina los ulimos 3)
-
 31. git reset --hard HEAD~1  (elimina el ultimo commit)
-
 32. git reset --merge
-
 33. git reset --hard
-
 34. git reset --mixed <hash de commit a regresar>
-
 35. git config --get remote.origin.url 	(muestra la url de nuestro repositorio)
-
 36. git config --local -l 				(muestra la configuracion local)
-
 37. git config --global -l 				(muestra la configuracion global)
-
 38. git tag                             (lista los tag)
-
 39. git tag 1.0.0 -m "version 1.0.0"
-
 40. git checkout tag\_name              (Acceder al codigo asociado a ese tag)
-
 41. git push origin 1.0.0               (hacer push al tag)
-
-42. git config core.fileMode false		(Evita marcar todos los archivos como modificados al cambiar permisos.)
-		
-42. git checkout -b nombreDeLaNuevaBranch	(crear un rama a partir de la rama actual)
-		
+42. git config core.fileMode false		(Evita marcar todos los archivos como modificados al cambiar permisos.)	
+43. git checkout -b nombreDeLaNuevaBranch	(crear un rama a partir de la rama actual)
 44. git push --set-upstream origin nombreDeLaNuevaBranch		(subir al repo la rama nueva creada)
-		
-44. git commit -m "[UPD] this comment 				(Co Author del commit)
-		
-45. git branch -d rama-a-eliminar
-		
+45. git commit -m "[UPD] this comment 				(Co Author del commit)
+46. git branch -d rama-a-eliminar
 47. git push origin --delete rc-acabrera      (Informar la eliminacion de la rama al repo)
-		
 # Rebase
-48. git checkout --ours											(para conservar los cambios de tu rama local y descartar los de la rama remota.)
-    
+48.  git checkout --ours		(para conservar los cambios de tu rama local y descartar los de la rama remota.)
 49. git checkout --theirs							(para conservar los cambios de la rama remota y descartar los de tu rama local.)
-    
 50. git rebase --abort 							(para volver al estado anterior al rebase.)
+## Config
+51. git config --global --list
+52. git config --list
+
 # ##################################################################################################################################
 ## generar SSH
 
