@@ -6,6 +6,7 @@ git config --global -l  (muestra lol guardado)
 git config -l ó git config --list
 
 
+0. git show-branch			(, el cual muestra gráficamente dónde se separó la rama. Otro método es usar git show-branch, que ayuda a visualizar las relaciones de los ancestros.)
 1. git init
 2. git add README.md
 3. git commit -m "Mi primer Commit"
@@ -15,7 +16,7 @@ git config -l ó git config --list
 7. git branch -M main
 8. git branch -m <nuevo-nombre>      (cambiar el nombre de la rama, desde otra rama)
 9. git remote add origin main httpt://github.com/gnuxdar/example.git
-10.  git push -u origin main
+10. git push -u origin main
 11. git commit --amend -m "New commit message"  Reescribe el utimo commit
 12. git merge developer  (fusiona la rama que le indiquemos a la rama actual)
 13. git log --oneline --decorate --all --graph	(se ve la proicedencia de una rama)
@@ -23,18 +24,19 @@ git config -l ó git config --list
 15. cat my_proyecto/.git/config   (leer el fichero git para ver repositosio remoto o info)
 16. git remote -v   (muestra a que repositorio esta ligado)
 17. git ls-remote origin	(lista todas las ramas remotas)
+18. git log --oneline --graph --all --decorate
 ## log
-18. git log         (muestra los commit que se han hecho)
-19. git log -p      (muestra el codigo del commit)
-20. git log -p <nombre-del-archivo>     (si solo quieres ver los cambios en un archivo específico en cada commit, puedes usar el siguiente comando)
-21. git log <fichero>
-22. git log --author="Arturo Cabrera"       (con username)
-23. git log --author="gnuxdar@gmail.com"    (con email)
-24. git log --author="TuNombre" --oneline --decorate --graph
-25. git log --author="Arturo Cabrera" --since="2024-04-01" --until="2024-04-30" --format="%h - %s - %ad"
-26. git log --merges      (ver el historial de fusiones (merges))
-27. git blame <nombre-del-archivo>    (ver los cambios en un fichero especifico en cada commit)
-28. git blame <nombre-fichero> > <nombre-fichero-salida>  (para guardar la salida de git blame en un archivo)
+1.  git log         (muestra los commit que se han hecho)
+2.  git log -p      (muestra el codigo del commit)
+3.  git log -p <nombre-del-archivo>     (si solo quieres ver los cambios en un archivo específico en cada commit, puedes usar el siguiente comando)
+4.  git log <fichero>
+5.  git log --author="Arturo Cabrera"       (con username)
+6.  git log --author="gnuxdar@gmail.com"    (con email)
+7.  git log --author="TuNombre" --oneline --decorate --graph
+8.  git log --author="Arturo Cabrera" --since="2024-04-01" --until="2024-04-30" --format="%h - %s - %ad"
+9.  git log --merges      (ver el historial de fusiones (merges))
+10. git blame <nombre-del-archivo>    (ver los cambios en un fichero especifico en cada commit)
+11. git blame <nombre-fichero> > <nombre-fichero-salida>  (para guardar la salida de git blame en un archivo)
 28.	git revert <ID>		(Revertir algunas confirmaciones existentes)
 29. git reset --soft HEAD~1  (elimina el ultimo commit)
 30. git reset --hard HEAD~3 (elimina los ulimos 3)
@@ -56,12 +58,12 @@ git config -l ó git config --list
 46. git branch -d rama-a-eliminar
 47. git push origin --delete rc-acabrera      (Informar la eliminacion de la rama al repo)
 # Rebase
-48.  git checkout --ours		(para conservar los cambios de tu rama local y descartar los de la rama remota.)
-49. git checkout --theirs							(para conservar los cambios de la rama remota y descartar los de tu rama local.)
-50. git rebase --abort 							(para volver al estado anterior al rebase.)
+1.   git checkout --ours		(para conservar los cambios de tu rama local y descartar los de la rama remota.)
+2.  git checkout --theirs							(para conservar los cambios de la rama remota y descartar los de tu rama local.)
+3.  git rebase --abort 							(para volver al estado anterior al rebase.)
 ## Config
-51. git config --global --list
-52. git config --list
+1.  git config --global --list
+2.  git config --list
 
 # ##################################################################################################################################
 ## generar SSH
